@@ -1,4 +1,5 @@
-import { axiosInstance, setAccessToken } from 'shared/api/axiosInstance';
+
+import { axiosInstance, setAccessToken } from '@/shared/lib/axiosInstance';
 import { User } from '../model';
 
 

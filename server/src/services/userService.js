@@ -7,6 +7,7 @@ class UserService {
       where: { email },
       defaults: { username, email, password: await bcrypt.hash(password, 10) },
     });
+    // console.log(user, 'USER IN USERSERVICE');
 
     if (!isCreated) {
       throw new Error('User already exists');
