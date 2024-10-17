@@ -1,5 +1,5 @@
-const Card = require("../../db/models");
-const Topic = require("../../db/models");
+const { Topic, Card } = require("../../db/models");
+
 
 class TopicService {
   static async getAllTopics() {
