@@ -1,5 +1,5 @@
 
-import { CardService } from '@/app/entities/card/api';
+import { CardService } from '@/entities/card/api';
 import { CardItem } from '../../entities/card/ui/CardItem';
 import { useEffect, useState } from 'react';
 

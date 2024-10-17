@@ -1,8 +1,10 @@
 
 import { RouterProvider } from 'react-router-dom';
-import { router } from './app/router/router';
+
 import { Provider } from 'react-redux';
-import store from './app/store/store';
+import {router} from '../app/router/router';
+import store from './store/store';
+
 
 
 
