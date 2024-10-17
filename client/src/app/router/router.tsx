@@ -2,12 +2,12 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import { ROUTES as AppRoutes } from "./routes";
 import Layout from "./Layout/Layout";
 import {
-  HomePage,
   SignInPage,
   SignUpPage,
 
 } from "@/pages";
 import { ProtectedRoute } from "@/shared/ui/ProtectedRoute";
+import { CardList } from "@/widgets/CardList/CardList";
 // import { ArticleProvider } from "../providers/ArticleContext";
 // import { OneArticlePage } from "@/pages/OneArticlePage";
 // import { ArticlesPage } from "@/pages/ArticlesPage";
@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: AppRoutes.HOME,
-        element: <HomePage />,
+        element: <CardList />,
       },
       // {
       //   path: AppRoutes.CARDS,
