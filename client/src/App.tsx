@@ -1,11 +1,14 @@
+
 import { RouterProvider } from 'react-router-dom';
 import { router } from './app/router/router';
 import { Provider } from 'react-redux';
 import store from './app/store/store';
 
 
+
 function App() {
   return (
+
 
       
 
@@ -16,6 +19,7 @@ function App() {
     
 
   );
+
 }
 
 export default App;
