@@ -2,40 +2,50 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Users', {
+    await queryInterface.createTable('Cards', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      username: {
-        type: Sequelize.STRING
-      },
-      email: {
-        unique: true,
+      question: {
         allowNull: false,
         type: Sequelize.STRING
       },
-      password: {
+      answer: {
         allowNull: false,
         type: Sequelize.STRING
       },
-      score: {
+      topicId: {
+        allowNull: false,
         type: Sequelize.INTEGER,
-        defaultValue: 0,
+        references: {
+          model: "Topics",
+          key: "id",
+        },
+      },
+      value: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
+      image: {
+        allowNull: false,
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date(),
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: new Date(),
       }
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Users');
+    await queryInterface.dropTable('Cards');
   }
 };

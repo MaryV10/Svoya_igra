@@ -8,14 +8,14 @@ module.exports = {
       {
         question: "1",
         answer: "1",
-        topicsId: 1,
+        topicId: 1,
         value: 100,
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_qT-jkhCGg20ldgi1hat4zLz9yy4u_amzGWyP09YOm4YqHgd-ouZsR-fE5k8xfrcTn0&usqp=CAU"
     },
     {
       question: "2",
       answer: "2",
-      topicsId: 1,
+      topicId: 1,
       value: 200,
       image: "https://numarulsaptamanii.ro/gfx/500x500/2.png"
   },
@@ -23,7 +23,7 @@ module.exports = {
   {
     question: "3",
     answer: "3",
-    topicsId: 1,
+    topicId: 1,
     value: 300,
     image: "https://cdn-icons-png.flaticon.com/512/10323/10323435.png"
 },
@@ -31,7 +31,7 @@ module.exports = {
 {
   question: "4",
   answer: "4",
-  topicsId: 1,
+  topicId: 1,
   value: 400,
   image: "https://e7.pngegg.com/pngimages/231/185/png-clipart-logo-black-and-white-brand-number-4-angle-white.png"
 },
@@ -39,21 +39,21 @@ module.exports = {
 {
   question: "5",
   answer: "1",
-  topicsId: 1,
+  topicId: 1,
   value: 500,
   image: "https://bakerstore.ru/image/cache/catalog/cutter/8930c_5_9x6-600x600.jpg"
 },
 {
   question: "1",
   answer: "1",
-  topicsId: 2,
+  topicId: 2,
   value: 100,
   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_qT-jkhCGg20ldgi1hat4zLz9yy4u_amzGWyP09YOm4YqHgd-ouZsR-fE5k8xfrcTn0&usqp=CAU"
 },
 {
 question: "2",
 answer: "2",
-topicsId: 2,
+topicId: 2,
 value: 200,
 image: "https://numarulsaptamanii.ro/gfx/500x500/2.png"
 },
@@ -61,7 +61,7 @@ image: "https://numarulsaptamanii.ro/gfx/500x500/2.png"
 {
 question: "3",
 answer: "3",
-topicsId: 2,
+topicId: 2,
 value: 300,
 image: "https://cdn-icons-png.flaticon.com/512/10323/10323435.png"
 },
@@ -69,7 +69,7 @@ image: "https://cdn-icons-png.flaticon.com/512/10323/10323435.png"
 {
 question: "4",
 answer: "4",
-topicsId: 2,
+topicId: 2,
 value: 400,
 image: "https://e7.pngegg.com/pngimages/231/185/png-clipart-logo-black-and-white-brand-number-4-angle-white.png"
 },
@@ -77,21 +77,21 @@ image: "https://e7.pngegg.com/pngimages/231/185/png-clipart-logo-black-and-white
 {
 question: "5",
 answer: "1",
-topicsId: 2,
+topicId: 2,
 value: 500,
 image: "https://bakerstore.ru/image/cache/catalog/cutter/8930c_5_9x6-600x600.jpg"
 },
 {
   question: "1",
   answer: "1",
-  topicsId: 3,
+  topicId: 3,
   value: 100,
   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_qT-jkhCGg20ldgi1hat4zLz9yy4u_amzGWyP09YOm4YqHgd-ouZsR-fE5k8xfrcTn0&usqp=CAU"
 },
 {
 question: "2",
 answer: "2",
-topicsId: 3,
+topicId: 3,
 value: 200,
 image: "https://numarulsaptamanii.ro/gfx/500x500/2.png"
 },
@@ -99,7 +99,7 @@ image: "https://numarulsaptamanii.ro/gfx/500x500/2.png"
 {
 question: "3",
 answer: "3",
-topicsId: 3,
+topicId: 3,
 value: 300,
 image: "https://cdn-icons-png.flaticon.com/512/10323/10323435.png"
 },
@@ -107,7 +107,7 @@ image: "https://cdn-icons-png.flaticon.com/512/10323/10323435.png"
 {
 question: "4",
 answer: "4",
-topicsId: 3,
+topicId: 3,
 value: 400,
 image: "https://e7.pngegg.com/pngimages/231/185/png-clipart-logo-black-and-white-brand-number-4-angle-white.png"
 },
@@ -115,7 +115,7 @@ image: "https://e7.pngegg.com/pngimages/231/185/png-clipart-logo-black-and-white
 {
 question: "5",
 answer: "1",
-topicsId: 3,
+topicId: 3,
 value: 500,
 image: "https://bakerstore.ru/image/cache/catalog/cutter/8930c_5_9x6-600x600.jpg"
 },
