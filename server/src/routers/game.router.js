@@ -4,7 +4,7 @@ const { verifyAccessToken } = require('../middlewares/verifyToken');
 const gameRouter = require('express').Router();
 
 gameRouter
-.get("/", verifyAccessToken, getGameController)
+.get("/", getGameController)
 .post("/", verifyAccessToken, createGameController)
 .put("/status", verifyAccessToken, updateStatusGameController)
 .put("/score", verifyAccessToken, updateScoreGameController);
