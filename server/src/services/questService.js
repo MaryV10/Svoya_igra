@@ -12,7 +12,7 @@ class QuestService {
 
     static async createQuest(gameId, cardId){
         try {
-           await Quest.create({gameId, cardId}); 
+           return await Quest.create({gameId, cardId}); 
         } catch (error) {
             console.error(error);
         }

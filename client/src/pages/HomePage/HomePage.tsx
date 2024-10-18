@@ -26,8 +26,8 @@ function handleStartGame () {
 
   return (
     <>
-  <h1>Home Page</h1>
-    <button onClick={handleStartGame}>Начать игру</button>
+  <h1 style={{color:'black'}}>Home Page</h1>
+    <button  style={{color:'black'}} onClick={handleStartGame}>Начать игру</button>
     </>
   );
 
