@@ -16,13 +16,13 @@ type RejectValue = {
 
 export const getGame = createAsyncThunk<
 Game, 
-{ userId: number },
+void,
 { rejectValue: RejectValue }
 >(
   GAME_THUNKS_ACTIONS.GET_GAME,
-  async ({ userId }, { rejectWithValue }) => {
+  async ( _, { rejectWithValue }) => {
     try {
-        return await GameService.getGame(userId);
+        return await GameService.getGame();
       } catch (error) {
         const err = error as AxiosError<{ message: string }>;
         return rejectWithValue({ message: err.message });
@@ -73,6 +73,7 @@ Game,
   GAME_THUNKS_ACTIONS.UPDATE_SCORE_GAME,
   async ({ userId, score }, { rejectWithValue }) => {
     try {
+      console.log(userId, score, "KFKFKFKFKF")
       return await GameService.updateScoreGame(userId, score);
     } catch (error) {
       const err = error as AxiosError<{ message: string }>;
