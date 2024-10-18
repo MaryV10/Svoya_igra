@@ -5,7 +5,7 @@ export class CardService {
   //* Получить все задачи
   static async getAllCards(): Promise<TaskList> {
     try {
-      const response = await axiosInstance.get('/cards');
+      const response = await axiosInstance.get('/topics');
       console.log(response.data, "response")
       return response.data;
 

@@ -5,7 +5,7 @@ const TopicService = require("../services/topicService");
 async function getTopicController(req, res) {
     try {
       const topics = await TopicService.getAllTopics();
-      console.log(topics)
+      console.log(topics, "____________------")
     res.status(200).json(topics);  
     } catch (error) {
         res.status(500).json({ message: error.message });  
