@@ -1,16 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Game}  from ".";
+import { Game, Games } from ".";
 
-import { createGame, getGame, updateScoreGame, updateStatusGame } from "../api/gameThunks";
+import {
+  createGame,
+  getGame,
+  updateScoreGame,
+  updateStatusGame,
+} from "../api/gameThunks";
 
 type GameSliceType = {
-  game: Game[];
+  game: Game | null;
   error: string | null;
   loading: boolean;
+  games: Games | [];
 };
 
 const initialState: GameSliceType = {
-    game: [],
+  games: [],
+  game: null,
   error: null,
   loading: false,
 };
@@ -28,10 +35,9 @@ const gameSlice = createSlice({
         state.error = action.error.message || "Error to get game";
       })
       .addCase(getGame.fulfilled, (state, action) => {
-       
         state.loading = false;
         state.error = null;
-        state.game = [action.payload];
+        state.game = action.payload;
       })
 
       //!----------------------- CREATE
@@ -42,10 +48,9 @@ const gameSlice = createSlice({
         state.error = action.error.message || "Error to get tasks";
       })
       .addCase(createGame.fulfilled, (state, action) => {
-        
         state.loading = false;
         state.error = null;
-        state.game = [action.payload];
+        state.game = action.payload;
       })
       //!----------------------- UPD STATUS
       .addCase(updateStatusGame.pending, (state) => {
@@ -57,14 +62,11 @@ const gameSlice = createSlice({
       .addCase(updateStatusGame.fulfilled, (state, action) => {
         state.loading = false;
         state.error = null;
-        state.game = [action.payload];
+        state.game = action.payload;
         // state.tasks = state.tasks.map((task) =>
         //   task.id === action.payload.id ? action.payload : task
         // );
       })
-
-
-
 
       //!----------------------- UPD SCORE
       .addCase(updateScoreGame.pending, (state) => {
@@ -76,11 +78,11 @@ const gameSlice = createSlice({
       .addCase(updateScoreGame.fulfilled, (state, action) => {
         state.loading = false;
         state.error = null;
-        state.game = [action.payload];
+        state.game = action.payload;
         // state.tasks = state.tasks.map((task) =>
         //   task.id === action.payload.id ? action.payload : task
         // );
-      })
+      });
   },
 });
 

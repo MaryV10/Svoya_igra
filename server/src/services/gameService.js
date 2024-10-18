@@ -15,7 +15,7 @@ class GameService {
 
   static async createGame(userId) {
     try {
-      await Game.create({ userId, isActive: true });
+      await Game.create({ userId, isActive: true, score: 0});
       return await Game.findOne({
         where: { userId,  isActive: true  },
         include: { model: Card, as: "cards" }});

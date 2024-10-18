@@ -34,12 +34,12 @@ Game,
 
 export const createGame = createAsyncThunk<
 Game,
-{ userId: number, isActive: boolean },
+number,
 { rejectValue: RejectValue }
 >(
-    GAME_THUNKS_ACTIONS.CREATE_GAME, async ({ userId, isActive }, { rejectWithValue }) => {
+    GAME_THUNKS_ACTIONS.CREATE_GAME, async ( userId , { rejectWithValue }) => {
         try {
-            return await GameService.createGame(userId, isActive);
+            return await GameService.createGame(userId);
         } catch (error) {
             const err = error as AxiosError<{ message: string }>;
             return rejectWithValue({ message: err.message });
@@ -54,9 +54,9 @@ Game,
   { rejectValue: RejectValue }
 >(
   GAME_THUNKS_ACTIONS.UPDATE_STATUS_GAME,
-  async ({ userId, isActive }, { rejectWithValue }) => {
+  async ({ userId }, { rejectWithValue }) => {
     try {
-      return await GameService.updateStatusGame(userId, isActive);
+      return await GameService.updateStatusGame(userId);
     } catch (error) {
       const err = error as AxiosError<{ message: string }>;
       return rejectWithValue({ message: err.message });
@@ -70,7 +70,7 @@ Game,
   { userId: number, score: number },
   { rejectValue: RejectValue }
 >(
-  GAME_THUNKS_ACTIONS.UPDATE_STATUS_GAME,
+  GAME_THUNKS_ACTIONS.UPDATE_SCORE_GAME,
   async ({ userId, score }, { rejectWithValue }) => {
     try {
       return await GameService.updateScoreGame(userId, score);
