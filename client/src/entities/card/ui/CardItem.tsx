@@ -11,11 +11,11 @@ type Props = {
 
 
 export const CardItem: React.FC<Props> = ({
-  question
+  card
 
 }) => {
 
-
+console.log(card, "++++++")
 
   const handleAnswer = () => {
     console.log('1')
@@ -25,8 +25,8 @@ export const CardItem: React.FC<Props> = ({
     
       
         <>
-     <h1>{question.question}</h1>
-     <p>{question.answer}</p>
+     <h1>{card.question}</h1>
+     <p>{card.answer}</p>
         </>
      
 

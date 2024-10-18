@@ -19,15 +19,18 @@ export const CardList: React.FC = () => {
   }, []); 
   console.log(cards.Cards)
   
+
   const allCards1 = cards.filter((el) => el.name === "Природа" ).flatMap((card) => card.Cards );
   const allCards2 = cards.filter((el) => el.name === "Город" ).flatMap((card) => card.Cards );
+
 
  
   return (
     <div>
-      
+
       {allCards1.map((card) => (
       
+
         <CardItem
           key={card.id}
           card={card}
