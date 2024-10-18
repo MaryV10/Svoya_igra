@@ -5,7 +5,9 @@ import { ROUTES } from '@/app/router/routes';
 import { ThemeButton } from '@/shared/ui/Button/Button';
 import { Button } from 'antd';
 import styles from './HomePage.module.css'
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+
+
 
 export const HomePage: React.FC = () => {
 
@@ -13,8 +15,12 @@ const dispatch = useAppDispatch();
 const {game} = useAppSelector((state) => state.game)
 const {user} = useAppSelector((state) => state.user)
 
+const navigate = useNavigate()
+
 function handleStartGame () {
-  if (user) {dispatch(createGame(user.id))}
+  if (user) {dispatch(createGame(user.id))
+    navigate(ROUTES.CARDS)
+  }
   
 }
 
@@ -24,7 +30,7 @@ function handleStartGame () {
     <button onClick={handleStartGame}>Начать игру</button>
     </>
   );
-=======
+
   return (       
   <>
   <p>HOME PAGE</p>
