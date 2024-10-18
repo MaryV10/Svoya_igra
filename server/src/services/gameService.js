@@ -5,7 +5,7 @@ class GameService {
     try {
 
       return await Game.findOne({
-        where: { userId },
+        where: { userId,  isActive: true  },
         include: { model: Card, as: "cards" },
       });
     } catch (error) {
@@ -15,7 +15,10 @@ class GameService {
 
   static async createGame(userId) {
     try {
-      return await Game.Create({ userId, isActive: true });
+      await Game.create({ userId, isActive: true });
+      return await Game.findOne({
+        where: { userId,  isActive: true  },
+        include: { model: Card, as: "cards" }});
     } catch (error) {
       console.error(error);
     }
@@ -23,7 +26,8 @@ class GameService {
 
   static async updateStatusGame(userId) {
     try {
-      const game = await Game.findOne({ where: { userId, isActive: true } });
+      const game = await Game.findOne({   where: { userId,  isActive: true  },
+        include: { model: Card, as: "cards" } });
       if (game) {
         game.isActive = false;
         await game.save();
@@ -37,7 +41,8 @@ class GameService {
 
   static async updateScoreGame(userId, score) {
     try {
-      const game = await Game.findOne({ where: { userId, isActive: true } });
+      const game = await Game.findOne({   where: { userId,  isActive: true  },
+        include: { model: Card, as: "cards" } });
       if (game) {
         game.score = game.score + score;
         await game.save();
