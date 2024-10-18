@@ -20,7 +20,7 @@ void,
 { rejectValue: RejectValue }
 >(
   GAME_THUNKS_ACTIONS.GET_GAME,
-  async ( _, { rejectWithValue }) => {
+  async (_, { rejectWithValue }) => {
     try {
         return await GameService.getGame();
       } catch (error) {

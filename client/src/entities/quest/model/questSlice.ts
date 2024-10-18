@@ -46,7 +46,7 @@ const questSlice = createSlice({
         .addCase(createQuest.fulfilled, (state, action) => {
             state.loading = false;
             state.error = null;
-            state.quests = action.payload;
+            state.quests = [...state.quests, action.payload];
         })
 
     }

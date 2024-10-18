@@ -1,0 +1,50 @@
+.buttonCard {
+    width: 170px;
+    height: 100px;
+    border-radius: 15px;
+    background: #05386b;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавные анимации */
+  }
+  
+  .buttonCard:hover {
+    transform: translateY(-8px); /* Поднимаем кнопку вверх */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Легкая тень */
+    border: none;
+  }
+  
+  .inputCard {
+    border-radius: 15px;
+    background: black;
+    padding: 5px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .question {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .buttonCardAnswer {
+    background-color: #0a6c45;
+  }
+  
+  /* Новый стиль для изображения */
+  .imageWrapper {
+    width: 150px; /* Устанавливаем фиксированный размер */
+    height: 150px; /* Делаем квадрат */
+    overflow: hidden; /* Обрезаем изображение, если оно выходит за пределы */
+    border-radius: 15px; /* Скругленные углы */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обеспечиваем, что изображение будет обрезаться, если оно не вписывается */
+  }
+  

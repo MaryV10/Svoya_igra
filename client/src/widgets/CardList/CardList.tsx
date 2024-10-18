@@ -4,6 +4,7 @@ import { CardItem } from '../../entities/card/ui/CardItem';
 import { useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '@/shared/hooks/reduxHooks';
 import { getAllTopics } from '@/entities/topic';
+import styles from "./CardList.module.css"
 import { getGame } from '@/entities/game/api/gameThunks';
 
 
@@ -29,8 +30,9 @@ export const CardList: React.FC = () => {
 //  console.log(game.game, "JJJJ")
   return (
   
-    <div>
-<h1>{topics[0]?.name}</h1>
+    <div className={styles.container}>
+      <div className={styles.theme}>
+<h1 className={styles.topics}>{topics[0]?.name}</h1>
       {allCards1.map((card) => (
       
 
@@ -41,7 +43,10 @@ export const CardList: React.FC = () => {
         
         />
       ))}
-<h1>{topics[1]?.name}</h1>
+      </div>
+
+      <div className={styles.theme}>
+<h1 className={styles.topics}>{topics[1]?.name}</h1>
 {allCards2.map((card) => (
       
       <CardItem
@@ -50,7 +55,11 @@ export const CardList: React.FC = () => {
       
       />
     ))}
- <h1>{topics[2]?.name}</h1>
+
+</div>
+
+<div className={styles.theme}>
+ <h1 className={styles.topics}>{topics[2]?.name}</h1>
    
    
     {allCards3.map((card) => (
@@ -62,5 +71,7 @@ export const CardList: React.FC = () => {
       />
     ))}
     </div>
+    </div>
   );
+  
 };

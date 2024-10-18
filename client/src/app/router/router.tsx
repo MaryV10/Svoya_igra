@@ -9,6 +9,7 @@ import {
 } from "@/pages";
 import { ProtectedRoute } from "@/shared/ui/ProtectedRoute";
 import { CardList } from "@/widgets/CardList/CardList";
+import { CardPage } from "@/pages/CardPage.tsx/CardPage";
 // import { ArticleProvider } from "../providers/ArticleContext";
 // import { OneArticlePage } from "@/pages/OneArticlePage";
 // import { ArticlesPage } from "@/pages/ArticlesPage";
@@ -26,7 +27,7 @@ export const router = createBrowserRouter([
       },
       {
         path: AppRoutes.CARDS,
-        element: <CardList />,
+        element: <CardPage />,
 
       },
       // {
