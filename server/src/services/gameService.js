@@ -4,10 +4,12 @@ class GameService {
   static async getGame(userId) {
     try {
 
-      return await Game.findOne({
-        where: { userId,  isActive: true  },
+       const game1 = await Game.findOne({
+        where: { userId },
         include: { model: Card, as: "cards" },
       });
+      console.log(game1, "GAME SERV")
+      return game1
     } catch (error) {
       console.error(error);
     }
@@ -38,6 +40,7 @@ class GameService {
       console.error(error);
     }
   }
+
 
   static async updateScoreGame(userId, score) {
     try {

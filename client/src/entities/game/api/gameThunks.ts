@@ -73,6 +73,7 @@ Game,
   GAME_THUNKS_ACTIONS.UPDATE_SCORE_GAME,
   async ({ userId, score }, { rejectWithValue }) => {
     try {
+      console.log(userId, score, "KFKFKFKFKF")
       return await GameService.updateScoreGame(userId, score);
     } catch (error) {
       const err = error as AxiosError<{ message: string }>;

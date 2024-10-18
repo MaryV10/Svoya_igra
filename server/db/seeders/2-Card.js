@@ -6,109 +6,109 @@ module.exports = {
    
      await queryInterface.bulkInsert('Cards',  [  
       {  
-          question: "Что такое экосистема?",  
-          answer: "Экосистема – это система, состоящая из живых организмов и их неживой среды, взаимодействующих друг с другом.",  
+          question: "Что за животное - питомец Хагрида, Клювокрыл?",  
+          answer: "Гиппогриф",  
           topicId: 1,  
           value: 100,  
-          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ecosystem.jpg/640px-Ecosystem.jpg"  
+          image: "https://avatars.mds.yandex.net/get-entity_search/10105370/984396236/S600xU_2x"  
       },  
       {  
-          question: "Какое животное является самым большим на планете?",  
-          answer: "Самое большое животное на планете – это голубой кит.",  
+          question: "Слезы какого животного являются единственным известным противоядием от яда василиска?",  
+          answer: "Феникс",  
           topicId: 1,  
           value: 200,  
-          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Balaenoptera_musculus_001.jpg/640px-Balaenoptera_musculus_001.jpg"  
+          image: "https://avatars.mds.yandex.net/i?id=603b6d6390777f1b689448061f3e206b_l-4568203-images-thumbs&n=13"  
       },  
       {  
-          question: "Что такое биом?",  
-          answer: "Биом – это обширная экосистема, характеризующаяся специфическими климатическими условиями и типами растительности.",  
+          question: "Как зовут гигантского паука, который чуть не убил Гарри, Рона и Клыка в Запретном лесу?",  
+          answer: "Арагог",  
           topicId: 1,  
           value: 300,  
-          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Biome_distribution.svg/640px-Biome_distribution.svg.png"  
+          image: "https://avatars.mds.yandex.net/get-entity_search/4740766/978870532/orig"  
       },  
       {  
-          question: "Почему важно биоразнообразие?",  
-          answer: "Биоразнообразие важно для поддержания экосистем, природных ресурсов и устойчивости к изменениям окружающей среды.",  
+          question: "Как звали домового эльфа семьи Блэк?",  
+          answer: "Добби",  
           topicId: 1,  
           value: 400,  
-          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Fauna_of_the_world.jpg/640px-Fauna_of_the_world.jpg"  
+          image: "https://avatars.mds.yandex.net/i?id=733f164d806c5efa9eee0169099333a2_l-5886829-images-thumbs&n=13"  
       },  
       {  
-          question: "Каковы основные причины вымирания видов?",  
-          answer: "Основные причины вымирания видов включают разрушение среды обитания, изменения климата, загрязнение и охоту.",  
+          question: "Как зовут трехголового пса Хагрида, охраняющего Философский камень?",  
+          answer: "Пушок",  
           topicId: 1,  
           value: 500,  
-          image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Extinct_species_2.jpg/640px-Extinct_species_2.jpg"  
+          image: "https://m.media-amazon.com/images/M/MV5BMGFmMjczM2YtZTI3Yi00ZTFmLTgxNDAtMTdkOWZkMjVhYzlmXkEyXkFqcGdeQXVyNjQ4ODE4MzQ@._V1_FMjpg_UX1000_.jpg"  
       },
       {  
         question: "В каком году был основан Санкт-Петербург?",  
-        answer: "Санкт-Петербург был основан в 1703 году.",  
+        answer: "1703",  
         topicId: 2,  
         value: 100,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sankt-Petersburg%2C_bts.jpg/640px-Sankt-Petersburg%2C_bts.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=e971346a5663ce3d05649cf32dcea972e13d3786-3572439-images-thumbs&n=13"  
     },  
     {  
-        question: "Какой знаменитый мост в Санкт-Петербурге разводят для прохода кораблей?",  
-        answer: "В Санкт-Петербурге разводят Дворцовый мост.",  
+        question: "Почему в Питере много дождей?",  
+        answer: "Нева",  
         topicId: 2,  
         value: 200,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Dvortsoviy_bridge_in_the_night.jpg/640px-Dvortsoviy_bridge_in_the_night.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=6840b81fc7dd49fa0edcfbd1d5de175917f34754-5502412-images-thumbs&n=13"  
     },  
     {  
         question: "Какой знаменитый музей находится в Санкт-Петербурге?",  
-        answer: "В Санкт-Петербурге находится Эрмитаж, один из крупнейших музеев искусства и культуры в мире.",  
+        answer: "Эрмитаж",  
         topicId: 2,  
         value: 300,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Hermitage_Museum_2020.jpg/640px-Hermitage_Museum_2020.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=fc857df6605991de21d4cf5db90c82051aba95ac-4401365-images-thumbs&n=13"  
     },  
     {  
         question: "Какой собор известен своими куполами и находится в Санкт-Петербурге?",  
-        answer: "Исаакиевский собор — известный собор с массивными куполами, расположенный в Санкт-Петербурге.",  
+        answer: "Исаакиевский",  
         topicId: 2,  
         value: 400,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/St._Isaac%27s_Cathedral%2C_Saint_Petersburg_%28cropped%29.jpg/640px-St._Isaac%27s_Cathedral%2C_Saint_Petersburg_%28cropped%29.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=23083d9d1eb6cb090c759f014d3a1555_l-4306623-images-thumbs&n=13"  
     },  
     {  
         question: "Какой канал течет через центр Санкт-Петербурга?",  
-        answer: "Санкт-Петербург пересекает Невский канал.",  
+        answer: "Грибоедова",  
         topicId: 2,  
         value: 500,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nevsky_Canal_%28Saint_Petersburg%29.jpg/640px-Nevsky_Canal_%28Saint_Petersburg%29.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=7f8238b7e493982c93991d74f8cb9416c8f1ee98-5885354-images-thumbs&n=13"  
     },
     {  
-      question: "Какое самое большое море на Земле?",  
-      answer: "Самое большое море на Земле – это Филиппинское море.",  
-      topicId: 3,  
-      value: 100,  
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Philippine_Sea_map.png/640px-Philippine_Sea_map.png"  
-  },  
-  {  
-      question: "Что такое марины?",  
-      answer: "Марины – это подводные экосистемы, состоящие из различных видов морских организмов и их среды обитания.",  
-      topicId: 3,  
-      value: 200,  
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Coral_reef_0001.JPG/640px-Coral_reef_0001.JPG"  
-  },  
-  {  
-      question: "Какое море отделяет Европу от Азии?",  
-      answer: "Каспийское море отделяет Европу от Азии.",  
-      topicId: 3,  
-      value: 300,  
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Caspian_Sea_map.png/640px-Caspian_Sea_map.png"  
-  },  
-  {  
-      question: "Какие основные виды морских животных?",  
-      answer: "Основные виды морских животных включают рыбы, млекопитающие (например, дельфины и киты), моллюски и кораллы.",  
-      topicId: 3,  
-      value: 400,  
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Fish_tank.jpg/640px-Fish_tank.jpg"  
-  },  
-  {  
-      question: "Какое физическое явление вызывает приливы и отливы в море?",  
-      answer: "Приливы и отливы в море вызваны гравитационным воздействием Луны и Солнца.",  
+      question: "Самая высокая горная вершина России и Европы?",  
+      answer: "Эльбрус",  
       topicId: 3,  
       value: 500,  
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Tides_diagram.png/640px-Tides_diagram.png"  
+      image: "https://qp-storage.media.mts.ru/mts_media/images/materials/Elbrus_921.jpg"  
+  },  
+  {  
+      question: "Какие цвет получится, если смешать желтый и синий?",  
+      answer: "Зеленый",  
+      topicId: 3,  
+      value: 200,  
+      image: "https://avatars.mds.yandex.net/i?id=3b271dba1e5667fcb2d4a814ac3cee49188e2634-10697630-images-thumbs&n=13"  
+  },  
+  {  
+      question: "Что важнее таланта??",  
+      answer: "Упорство",  
+      topicId: 3,  
+      value: 300,  
+      image: "https://avatars.mds.yandex.net/i?id=445a525b596c188d616e0c4c2b473fcf81d6d729-4499710-images-thumbs&n=13"  
+  },  
+  {  
+      question: "На какого студента третьей фазы похожа эта уточка?",  
+      answer: "Дима",  
+      topicId: 3,  
+      value: 400,  
+      image: "https://avatars.mds.yandex.net/get-mpic/5281727/img_id3162085770580284016.jpeg/orig"  
+  },  
+  {  
+      question: "Кто переживает за ваши проекты?",  
+      answer: "Юра",  
+      topicId: 3,  
+      value: 100,  
+      image: "https://kartinki.pics/uploads/posts/2022-12/1670465089_16-kartinkin-net-p-kartinki-maika-vazovskogo-krasivo-17.jpg"  
   }    
   ], {});
   
