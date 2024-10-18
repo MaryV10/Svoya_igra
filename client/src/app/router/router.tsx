@@ -8,7 +8,6 @@ import {
 
 } from "@/pages";
 import { ProtectedRoute } from "@/shared/ui/ProtectedRoute";
-import { CardList } from "@/widgets/CardList/CardList";
 // import { ArticleProvider } from "../providers/ArticleContext";
 // import { OneArticlePage } from "@/pages/OneArticlePage";
 // import { ArticlesPage } from "@/pages/ArticlesPage";
@@ -22,10 +21,12 @@ export const router = createBrowserRouter([
       {
         path: AppRoutes.HOME,
         element: <HomePage />,
+
       },
       {
         path: AppRoutes.CARDS,
         element: <CardList />,
+
       },
       // {
       //   path: AppRoutes.CARDS,
