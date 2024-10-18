@@ -66,7 +66,8 @@ export const CardItem: React.FC<Props> = ({ card }) => {
       </button>
       <ModalWindow active={active} setActive={setActive}>
         <h1 style={{ color: "black" }}>{card.question}</h1>
-        <p style={{ color: "black" }}>{card.answer}</p>
+        {/* <p style={{ color: "black" }}>{card.answer}</p> */}
+        <img src={card.image} alt="" />
         <input
           value={answer}
           type="text"
