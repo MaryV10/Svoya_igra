@@ -21,6 +21,12 @@ export const router = createBrowserRouter([
       {
         path: AppRoutes.HOME,
         element: <HomePage />,
+
+      },
+      {
+        path: AppRoutes.CARDS,
+        element: <CardList />,
+
       },
       // {
       //   path: AppRoutes.CARDS,
