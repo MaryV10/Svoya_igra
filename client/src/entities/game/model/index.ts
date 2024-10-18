@@ -4,3 +4,5 @@ export  type Game = {
     score: number;
     isActive: boolean;
 }
+
+export type Games = Game[]
