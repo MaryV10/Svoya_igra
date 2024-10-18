@@ -5,6 +5,7 @@ import { userSlice } from '@/entities/user';
 import { gameSlice } from '@/entities/game';
 
 import { topicSlice } from '@/entities/topic';
+import { questSlice } from '@/entities/quest';
 
 
 
@@ -15,9 +16,9 @@ export const store = configureStore({
 
     game: gameSlice,
 
-    topic: topicSlice
+    topic: topicSlice,
 
-    
+    quest: questSlice
   },
 });
 
