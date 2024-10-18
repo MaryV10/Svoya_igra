@@ -6,7 +6,7 @@ const gameRouter = require('express').Router();
 gameRouter
 .get("/", verifyAccessToken,getGameController)
 .post("/", verifyAccessToken, createGameController)
-.put("/status", verifyAccessToken, updateStatusGameController)
-.put("/score", verifyAccessToken, updateScoreGameController);
+.put("/status/:id", verifyAccessToken, updateStatusGameController)
+.put("/score/:id", verifyAccessToken, updateScoreGameController);
 
 module.exports = gameRouter;
