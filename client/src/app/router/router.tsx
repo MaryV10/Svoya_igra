@@ -2,6 +2,7 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import { ROUTES as AppRoutes } from "./routes";
 import Layout from "./Layout/Layout";
 import {
+  HomePage,
   SignInPage,
   SignUpPage,
 
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: AppRoutes.HOME,
+        element: <HomePage />,
+      },
+      {
+        path: AppRoutes.CARDS,
         element: <CardList />,
       },
       // {

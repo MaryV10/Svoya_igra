@@ -7,7 +7,7 @@ const tokenRouter= require('./token.api.router');
 
 
 router.use('/auth', authRouter);
-router.use('/cards', topicRouter);
+router.use('/topics', topicRouter);
 
 router.use('/tokens', tokenRouter);
 
