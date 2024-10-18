@@ -6,7 +6,7 @@ module.exports = {
     
      await queryInterface.bulkInsert('Topics', [
       {
-       name: 'Природа',
+       name: 'Гарри Поттер',
        
       },
       {
@@ -14,7 +14,7 @@ module.exports = {
         
        },
        {
-        name: 'Море',
+        name: 'Рандом',
         
        }
     ], {});
