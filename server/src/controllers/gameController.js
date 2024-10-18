@@ -2,7 +2,8 @@ const GameService = require("../services/gameService");
 
 async function getGameController(req, res) {
   const userId = res.locals.user.id;
-
+  // const userId = 1;
+console.log("MESAGEEEEEE")
   try {
     const game = await GameService.getGame(userId);
     res.status(200).json({ game });

@@ -1,16 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './Navbar.module.css';
-import { ROUTES } from '@/app/router/routes';
-import { logout, UserCard } from '@/entities/user';
-import Button, { ThemeButton } from '@/shared/ui/Button/Button';
-import { useAppDispatch, useAppSelector } from '@/shared/hooks/reduxHooks';
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import styles from "./Navbar.module.css";
+import { ROUTES } from "@/app/router/routes";
+import { logout, UserCard } from "@/entities/user";
+import Button, { ThemeButton } from "@/shared/ui/Button/Button";
+import { useAppDispatch, useAppSelector } from "@/shared/hooks/reduxHooks";
+import { getGame } from "@/entities/game/api/gameThunks";
 // import Loader from '@/shared/ui/Loader/Loader';
 
 export const Navbar: React.FC = () => {
   // const { user, loading } = useAppSelector((state) => state.user);
-  const { user, loading } = useAppSelector((state) => state.user);
+  const { user } = useAppSelector((state) => state.user);
+  const { game } = useAppSelector((state) => state.game);
   const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(getGame());
+  }, [dispatch]);
 
   const handleLogout = () => {
     dispatch(logout());
@@ -37,6 +43,7 @@ export const Navbar: React.FC = () => {
       {user ? (
         <>
           <UserCard user={user} />
+          <p style={{ color: "white" }}>Score: {game?.game.score}</p>
           <Button theme={ThemeButton.DANGER} onClick={handleLogout}>
             Logout
           </Button>

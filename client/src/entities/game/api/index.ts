@@ -2,9 +2,9 @@ import { axiosInstance } from "@/shared/lib/axiosInstance";
 import { Game } from "../model";
 
 export class GameService {
-  static async getGame(userId: number): Promise<Game> {
+  static async getGame(): Promise<Game> {
     try {
-      const response = await axiosInstance.get(`/games/${userId}`);
+      const response = await axiosInstance.get(`/games`);
       return response.data;
     } catch (error) {
       console.error("Error fetching all tasks:", error);
