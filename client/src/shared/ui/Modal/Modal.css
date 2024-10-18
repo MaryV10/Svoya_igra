@@ -1,3 +1,4 @@
+/* Модальное окно фоновое */
 .modal {
   height: 100vh;
   width: 100vw;
@@ -10,14 +11,17 @@
   justify-content: center;
   pointer-events: none;
   opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
+/* Когда модальное окно активно */
 .modal.active {
   opacity: 1;
   pointer-events: all;
   z-index: 1;
 }
 
+/* Контент модального окна */
 .modal__content {
   padding: 50px;
   border-radius: 12px;
@@ -25,5 +29,23 @@
   max-width: 380px;
   font-size: 16px;
   font-weight: 600;
-  /* z-index: 2; */
+  transform: translateY(30px); /* Начальная позиция — смещение снизу */
+  opacity: 0; /* Начальная прозрачность */
+  /* animation: floatIn 0.5s forwards; Применяем анимацию */
+}
+
+/* Анимация для плавного появления */
+@keyframes floatIn {
+  0% {
+    transform: translateY(30px); /* Начальная позиция — смещение снизу */
+    opacity: 0; /* Начальная прозрачность */
+  }
+  100% {
+    transform: translateY(0); /* Финальная позиция — без смещения */
+    opacity: 1; /* Полная непрозрачность */
+  }
+}
+
+.modal__content.active {
+  animation: floatIn 0.5s forwards; /* Активируем анимацию при включении модального окна */
 }

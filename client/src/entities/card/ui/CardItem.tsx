@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './TaskItem.module.css';
+import ModalWindow from '@/shared/ui/Modal/Modal';
 
 
 type Props = {
@@ -11,22 +12,31 @@ type Props = {
 
 
 export const CardItem: React.FC<Props> = ({
-  card
+  card,
+ 
 
 }) => {
+  const [active, setActive] = useState(false);
 
-console.log(card, "++++++")
 
   const handleAnswer = () => {
     console.log('1')
   };
 
+  const handlerShowForm = () => {
+    setActive(true)
+  }
+
   return (
     
       
         <>
-     <h1>{card.question}</h1>
-     <p>{card.answer}</p>
+        
+          <button onClick={handlerShowForm}>{card.value}</button>
+           <ModalWindow active={active} setActive={setActive}>
+     <h1 style={{color: 'black'}}>{card.question}</h1>
+     <p style={{color: 'black'}}>{card.answer}</p>
+     </ModalWindow>
         </>
      
 
