@@ -45,35 +45,35 @@ module.exports = {
         answer: "1703",  
         topicId: 2,  
         value: 100,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sankt-Petersburg%2C_bts.jpg/640px-Sankt-Petersburg%2C_bts.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=e971346a5663ce3d05649cf32dcea972e13d3786-3572439-images-thumbs&n=13"  
     },  
     {  
         question: "Почему в Питере много дождей?",  
         answer: "Нева",  
         topicId: 2,  
         value: 200,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Dvortsoviy_bridge_in_the_night.jpg/640px-Dvortsoviy_bridge_in_the_night.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=6840b81fc7dd49fa0edcfbd1d5de175917f34754-5502412-images-thumbs&n=13"  
     },  
     {  
         question: "Какой знаменитый музей находится в Санкт-Петербурге?",  
         answer: "Эрмитаж",  
         topicId: 2,  
         value: 300,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Hermitage_Museum_2020.jpg/640px-Hermitage_Museum_2020.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=fc857df6605991de21d4cf5db90c82051aba95ac-4401365-images-thumbs&n=13"  
     },  
     {  
         question: "Какой собор известен своими куполами и находится в Санкт-Петербурге?",  
         answer: "Исаакиевский",  
         topicId: 2,  
         value: 400,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/St._Isaac%27s_Cathedral%2C_Saint_Petersburg_%28cropped%29.jpg/640px-St._Isaac%27s_Cathedral%2C_Saint_Petersburg_%28cropped%29.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=23083d9d1eb6cb090c759f014d3a1555_l-4306623-images-thumbs&n=13"  
     },  
     {  
         question: "Какой канал течет через центр Санкт-Петербурга?",  
         answer: "Грибоедова",  
         topicId: 2,  
         value: 500,  
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Nevsky_Canal_%28Saint_Petersburg%29.jpg/640px-Nevsky_Canal_%28Saint_Petersburg%29.jpg"  
+        image: "https://avatars.mds.yandex.net/i?id=7f8238b7e493982c93991d74f8cb9416c8f1ee98-5885354-images-thumbs&n=13"  
     },
     {  
       question: "Самая высокая горная вершина России и Европы?",  
@@ -90,25 +90,25 @@ module.exports = {
       image: "https://avatars.mds.yandex.net/i?id=3b271dba1e5667fcb2d4a814ac3cee49188e2634-10697630-images-thumbs&n=13"  
   },  
   {  
-      question: "Из окна какого помещается открывается этот вид?",  
-      answer: "Typescript",  
+      question: "Что важнее таланта??",  
+      answer: "Упорство",  
       topicId: 3,  
       value: 300,  
-      image: "blob:https://web.telegram.org/2105ca92-19c6-4e03-b853-345d9b556e7f"  
+      image: "https://avatars.mds.yandex.net/i?id=445a525b596c188d616e0c4c2b473fcf81d6d729-4499710-images-thumbs&n=13"  
   },  
   {  
-      question: "На какого студента третьей фазы похожа эта уточка (по стилю)?",  
+      question: "На какого студента третьей фазы похожа эта уточка?",  
       answer: "Дима",  
       topicId: 3,  
       value: 400,  
-      image: "blob:https://web.telegram.org/cb919f0e-9693-4f25-92c6-bbcef02cdefb"  
+      image: "https://avatars.mds.yandex.net/get-mpic/5281727/img_id3162085770580284016.jpeg/orig"  
   },  
   {  
-      question: "Какая фаза имеет допуск к использованию данного оружия?",  
-      answer: "3",  
+      question: "Кто переживает за ваши проекты?",  
+      answer: "Юра",  
       topicId: 3,  
       value: 100,  
-      image: "blob:https://web.telegram.org/554f4b32-a483-4ac6-a9e4-b5d87a69d0a5"  
+      image: "https://kartinki.pics/uploads/posts/2022-12/1670465089_16-kartinkin-net-p-kartinki-maika-vazovskogo-krasivo-17.jpg"  
   }    
   ], {});
   

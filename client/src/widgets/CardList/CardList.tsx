@@ -21,9 +21,9 @@ export const CardList: React.FC = () => {
 
 
 
-  const allCards1 = topics.filter((el) => el.name === "Природа" ).flatMap((card) => card.Cards ).sort((a, b) => a.value - b.value );
+  const allCards1 = topics.filter((el) => el.name === "Гарри Поттер" ).flatMap((card) => card.Cards ).sort((a, b) => a.value - b.value );
   const allCards2 = topics.filter((el) => el.name === "Город" ).flatMap((card) => card.Cards ).sort((a, b) => a.value - b.value );
-  const allCards3 = topics.filter((el) => el.name === "Море" ).flatMap((card) => card.Cards ).sort((a, b) => a.value - b.value );
+  const allCards3 = topics.filter((el) => el.name === "Рандом" ).flatMap((card) => card.Cards ).sort((a, b) => a.value - b.value );
 
 
 //  console.log(game.game, "JJJJ")
