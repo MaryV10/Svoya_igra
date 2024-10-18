@@ -19,20 +19,33 @@ export const CardList: React.FC = () => {
   }, []); 
   console.log(cards.Cards)
   
-  const allCards = cards.flatMap((card) => card.Cards || []);
+
+  const allCards1 = cards.filter((el) => el.name === "Природа" ).flatMap((card) => card.Cards );
+  const allCards2 = cards.filter((el) => el.name === "Город" ).flatMap((card) => card.Cards );
+
 
  
   return (
     <div>
+
+      {allCards1.map((card) => (
       
-      {allCards.map((card) => (
-       
+
         <CardItem
           key={card.id}
           card={card}
         
         />
       ))}
+<p>2 category</p>
+{allCards2.map((card) => (
+      
+      <CardItem
+        key={card.id}
+        card={card}
+      
+      />
+    ))}
     </div>
   );
 };
